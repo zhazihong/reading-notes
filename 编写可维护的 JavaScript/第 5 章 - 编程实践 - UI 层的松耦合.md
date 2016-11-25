@@ -84,3 +84,7 @@ JavaScript 通常用来修改 UI，必然需要通过 JavaScript 向页面插入
 ### 5.5.3 复杂客户端模板
 
 之前在写 [浅谈 Web 中前后端模板引擎的使用](https://github.com/hanzichi/underscore-analysis/issues/25) 一文时，也简单调研了几个流行的前端模板引擎，综合考虑，如果有需要，决定启用 Handlebars（毕竟支持 IE6，虽然某些地方有坑待填）
+
+2016.11.25 add：好尴尬，刚决定在项目中使用 Handlebars，就碰到了问题。如果是简单的单页，应该没有什么问题，坑爹的是页面是 PHP 生成的，就像那种新闻列表详情页，是用 smarty 生成的。然后决定做半个前后端分离，在 tpl 中放前端模板，但是 smarty 和 Handlebars 都用的是 `{{}}`，虽然 smarty 是可以替换的，但是代码涉及的地方比较多，就考虑 Handlebars 方来做通配符的替换，但是坑爹的是，居然不能替换！[How to change the default delimiter of Handlebars.js?](http://stackoverflow.com/questions/14324850/how-to-change-the-default-delimiter-of-handlebars-js)（Google handlebars delimiter）
+
+解决方法貌似不少，不想折腾了，直接上了 Underscore.template。
