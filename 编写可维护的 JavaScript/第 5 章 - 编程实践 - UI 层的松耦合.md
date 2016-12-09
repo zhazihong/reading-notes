@@ -90,3 +90,27 @@ JavaScript 通常用来修改 UI，必然需要通过 JavaScript 向页面插入
 2016.11.25 add：好尴尬，刚决定在项目中使用 Handlebars，就碰到了问题。如果是简单的单页，应该没有什么问题，坑爹的是页面是 PHP 生成的，就像那种新闻列表详情页，非常多不可能一个个写，然后这边是用 smarty 生成。然后决定做半个前后端分离，在 tpl 中放前端模板，渲染页面需要的数据，smarty 相当于只是生成一个静态页面。但是 smarty 和 Handlebars 都用的是 `{{}}`，虽然 smarty 是可以替换的，但是代码涉及的地方比较多，就考虑 Handlebars 方来做通配符的替换，但是坑爹的是，居然不能替换！[How to change the default delimiter of Handlebars.js?](http://stackoverflow.com/questions/14324850/how-to-change-the-default-delimiter-of-handlebars-js)（Google handlebars delimiter）
 
 解决方法貌似不少，不想折腾了，直接上了 Underscore.template。
+
+## 5.6 将 CSS 从 JavaScript 中抽离
+
+书中并没有本节，但是却是我在工作中真实遇到过的，故记之。
+
+有的时候，我们需要动态生成样式（字符串），然后插入页面。
+
+```javascript
+function loadStyleString(css) {
+  var style = document.createElement("style");
+  style.type = "text/css";
+  try {
+      style.appendChild(document.createTextNode(css));
+  } catch (ex) {
+      style.styleSheet.cssText = css;
+  }
+  var head = document.getElementsByTagName("head")[0];
+  head.appendChild(style);
+}
+```
+
+其实这个场景和上一小结「将 HTML 从 JavaScript 中抽离」类似，也可以用前端模板来解决。
+
+那么，什么时候会用到动态生成样式表呢？比如我们需要一个可定制的页面，页面的一些样式可定制，通过 JavaScript 我们可以动态生成样式字符串。
