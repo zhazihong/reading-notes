@@ -16,5 +16,8 @@ fs.readdir(basePath, function(err, files) {
     md += '- [' + fileName + '](' +baseUrl + encodeURIComponent(fileName) + ')\n';
   });
 
-  fs.writeFile(mdSrc, md);
+  fs.writeFile(mdSrc, md, (err) => {
+    if (err) throw err;
+    console.log("Saved!");
+  });
 });
