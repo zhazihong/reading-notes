@@ -20,7 +20,7 @@ fs.readdir(basePath, function(err, files) {
 
     res.push({
       index: +arr[1],
-      fileName: fileName,
+      fileName: fileName.replace('.md', ''),
       fileUrl: baseUrl + encodeURIComponent(fileName)
     });
   });
