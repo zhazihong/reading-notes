@@ -14,3 +14,5 @@
 - [第 10 章 - 编程实践 - 抛出自定义错误](https://github.com/hanzichi/reading-notes/blob/master/编写可维护的%20JavaScript/%E7%AC%AC%2010%20%E7%AB%A0%20-%20%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5%20-%20%E6%8A%9B%E5%87%BA%E8%87%AA%E5%AE%9A%E4%B9%89%E9%94%99%E8%AF%AF.md)
 - [第 11 章 - 编程实践 - 不是你的对象不要动](https://github.com/hanzichi/reading-notes/blob/master/编写可维护的%20JavaScript/%E7%AC%AC%2011%20%E7%AB%A0%20-%20%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5%20-%20%E4%B8%8D%E6%98%AF%E4%BD%A0%E7%9A%84%E5%AF%B9%E8%B1%A1%E4%B8%8D%E8%A6%81%E5%8A%A8.md)
 - [第 12 章 - 编程实践 - 浏览器嗅探](https://github.com/hanzichi/reading-notes/blob/master/编写可维护的%20JavaScript/%E7%AC%AC%2012%20%E7%AB%A0%20-%20%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5%20-%20%E6%B5%8F%E8%A7%88%E5%99%A8%E5%97%85%E6%8E%A2.md)
+- [第 13 章 - 自动化 - 文件和目录结构](https://github.com/hanzichi/reading-notes/blob/master/编写可维护的%20JavaScript/%E7%AC%AC%2013%20%E7%AB%A0%20-%20%E8%87%AA%E5%8A%A8%E5%8C%96%20-%20%E6%96%87%E4%BB%B6%E5%92%8C%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84.md)
+- [第 14 章 - 自动化 - 总结](https://github.com/hanzichi/reading-notes/blob/master/编写可维护的%20JavaScript/%E7%AC%AC%2014%20%E7%AB%A0%20-%20%E8%87%AA%E5%8A%A8%E5%8C%96%20-%20%E6%80%BB%E7%BB%93.md)
