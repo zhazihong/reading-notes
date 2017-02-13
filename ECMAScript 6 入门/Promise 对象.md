@@ -94,6 +94,7 @@ getJSON("/posts.json").then(function(json) {
   // ...
 });
 ```
+在 then 方法中，可以直接 return 数据而不是 Promise 对象，在后面的 then 中就可以接受到数据了。
 
 ## 4. Promise.prototype.catch()
 
@@ -135,5 +136,6 @@ var p = Promise.reject('出错了');
 p.then(null, function (s) {
   console.log(s)
 });
+
 // 出错了
 ```
