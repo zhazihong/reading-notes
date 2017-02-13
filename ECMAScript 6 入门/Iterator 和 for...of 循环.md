@@ -177,6 +177,8 @@ for (let item of arr) {
 // 0
 // 1
 ```
+throw 方法主要是配合 Generator 函数使用，一般的遍历器对象用不到这个方法。
+
 
 ## 7. for...of 循环
 
