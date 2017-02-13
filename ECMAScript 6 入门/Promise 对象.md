@@ -94,7 +94,7 @@ getJSON("/posts.json").then(function(json) {
   // ...
 });
 ```
-在 then 方法中，可以直接 return 数据而不是 Promise 对象，在后面的 then 中就可以接受到数据了。
+在 then 方法中，可以直接 return 数据而不是 Promise 对象，在后面的 then 中就可以接收到数据了。
 
 ## 4. Promise.prototype.catch()
 
